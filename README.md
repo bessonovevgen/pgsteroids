@@ -2,6 +2,11 @@
 
 > у каждого разработчика 1С - должен стоять локально PostgreSQL, чтобы не расслабляться
 
+| 9.4 | 9.5 |
+|-----|-----|
+|[![Docker Automated build](https://img.shields.io/docker/automated/silverbulleters/vanessa-postgresql-94.svg)](https://hub.docker.com/r/silverbulleters/vanessa-postgresql-94/)| [![Docker Automated buil](https://img.shields.io/docker/automated/silverbulleters/vanessa-postgresql-95.svg)](https://hub.docker.com/r/silverbulleters/vanessa-postgresql-95/)|
+|[![Docker Pulls](https://img.shields.io/docker/pulls/silverbulleters/vanessa-postgresql-94.svg)](https://hub.docker.com/r/silverbulleters/vanessa-postgresql-94/)| [![Docker Pulls](https://img.shields.io/docker/pulls/silverbulleters/vanessa-postgresql-95.svg)](https://hub.docker.com/r/silverbulleters/vanessa-postgresql-95/)|
+
 Кому лень читать ниже, вот необходимые шаги для первоначальной настроки:
 
 * скачать Vagrant https://www.vagrantup.com
