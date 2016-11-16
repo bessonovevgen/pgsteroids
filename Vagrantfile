@@ -104,6 +104,7 @@ Vagrant.configure(2) do |config|
       unless File.exist?(file_to_disk4)
         v.customize ['createhd', '--filename', file_to_disk4, '--size', 250 * 1024]
       end
+      v.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 4, '--device', 0, '--type', 'hdd', '--medium', file_to_disk4]
     end
 
     # copy paste - because we need to explane 3 different port devices
