@@ -15,6 +15,14 @@ Vagrant.configure(2) do |config|
    config.vm.network "forwarded_port", guest: 8888, host: 8888
    config.vm.network "forwarded_port", guest: 9999, host: 9999
 
+  #Ports for onec-server 
+  #http://stackoverflow.com/questions/17623528/how-can-vagrant-forward-multiple-ports-on-the-same-machine
+   for i in 1540..1541
+          config.vm.network :forwarded_port, guest: i, host: i
+   end
+   for i in 1560..1591
+          config.vm.network :forwarded_port, guest: i, host: i
+   end
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "phusion/ubuntu-14.04-amd64"
